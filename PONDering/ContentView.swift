@@ -22,12 +22,16 @@ struct ContentView: View {
 
                 
                 
-                    Image("city")
+                    Image("ncity")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .padding()
                     Text("Spending time outside is a great way to improve your mental health. Click below to explore some ideas!")
+                        .font(.title3)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
+                        .padding(.horizontal, 5.0)
                     NavigationLink(destination: volunteering()) {
                         Image("nvolunteeringbutton")
                             .resizable(resizingMode: .stretch)
@@ -61,8 +65,7 @@ struct ContentView: View {
                 
                 
                 
-                
-                
+//thisis another change by daiana
                 
                 
             }//Vstack

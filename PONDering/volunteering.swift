@@ -34,37 +34,37 @@ struct volunteering: View {
                             
                             .cornerRadius(10)
             }//vstack
-//            VStack {
-//                Button(action: {
-//                    self.showNewTask = false
-//                }) {
-//                Text("X")
-//            }
-//
-//                Image("janeandmonkey")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .cornerRadius(15)
-//
-//
-//                    Text("CLEAN UP @ BOULDER CREEK PARK")
-//                        .font(.title)
-//                        .fontWeight(.bold)
-//                        .multilineTextAlignment(.center)
-//
-//
-//
-//                Text("Help clean up a local park by picking up trash around the creek!")
-//
-//
-//            }//cleanupvstack
-//            .padding()
-//            .background(Rectangle()
-//               .foregroundColor(.darkSage))
-//
-//            .cornerRadius(15)
-//            .shadow(radius: 15)
-//            .padding()
+            VStack {
+                Button(action: {
+                    self.showNewTask = false
+                }) {
+                Text("X")
+            }
+
+                Image("janeandmonkey")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(15)
+
+
+                    Text("CLEAN UP @ BOULDER CREEK PARK")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+
+
+
+                Text("Help clean up a local park by picking up trash around the creek!")
+
+
+            }//cleanupvstack
+            .padding()
+               .background(Rectangle()
+               .foregroundColor(.darkSage))
+
+            .cornerRadius(15)
+            .shadow(radius: 15)
+            .padding()
         }//ZStack
         
 
