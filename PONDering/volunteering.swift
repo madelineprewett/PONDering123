@@ -17,7 +17,10 @@ struct volunteering: View {
         ZStack {
             Color(UIColor(red: 250/255.0, green: 237/255.0, blue: 205/255.0, alpha: 255/255))  .ignoresSafeArea()
             VStack {
-               
+                Text("Volunteering")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.lBrown)
                 
                 Button(action: {
                                     
@@ -30,7 +33,8 @@ struct volunteering: View {
                                     }
                                     
                                     }, label: {
-                                    Text("Park Clean-Ups")
+                                        Text("Boulder Park Clean Up")
+                                            .font(.title2)
                                 })
                 .padding()
                             .tint(.white)
@@ -50,7 +54,8 @@ struct volunteering: View {
                                     }
                                     
                                     }, label: {
-                                    Text("Tree Plantings")
+                                        Text("Evelyn Schiffler Park Tree Planting")
+                                            .font(.title2)
                                 })
                 .padding()
                             .tint(.white)
@@ -70,7 +75,8 @@ struct volunteering: View {
                                     }
                                     
                                     }, label: {
-                                    Text("Animal Conservation")
+                                        Text("Foster City Bird Watching")
+                                            .font(.title2)
                                 })
                 .padding()
                             .tint(.white)
@@ -91,43 +97,6 @@ struct volunteering: View {
                 popUpView3()
             }//popup3
             
-            //BEGINNING OF HIDDEN CLEAN UP RECTANGLE
-            
-            
-//            VStack {
-//
-//                Button("X") {
-//
-//                }
-//
-//                Image("")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .cornerRadius(15)
-//
-//
-//                Text("")
-//                    .font(.title)
-//                    .fontWeight(.bold)
-//                    .multilineTextAlignment(.center)
-//
-//
-//
-//                Text("")
-//
-//
-//            }//cleanupvstack
-//            .padding()
-//            .background(Rectangle()
-//               .foregroundColor(.darkSage))
-//
-//
-//            .cornerRadius(15)
-//            .shadow(radius: 15)
-//            .padding()
-            
-            //END OF HIDDEN CLEAN UP RECTANGLE
-            
             
         }//ZStack
         
@@ -142,9 +111,16 @@ struct volunteering: View {
                         self.parkClean = false
                     }
                 }, label: {
-                    Text("X")
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
+                    HStack {
+                Spacer()
+                        Image("theX")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.leading, 0.0)
+                            .frame(width: 30, height: 30)
+                    }//Hstack
+                   
+
                 })
                 Image("boulderPark")
                      .resizable()
@@ -174,14 +150,21 @@ struct volunteering: View {
                         self.treePlant = false
                     }
                 }, label: {
-                    Text("X")
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
+                    HStack {
+                Spacer()
+                        Image("theX")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.leading, 0.0)
+                            .frame(width: 30, height: 30)
+                    }//Hstack
+                    .padding(1)
                 })
                 Image("boulderPark")
                      .resizable()
                      .aspectRatio(contentMode: .fit)
                      .cornerRadius(15)
+                     .padding(1)
                 Text("TREE PLANTING @ EVELYN SCHIFFLER PARK")
                     .font(.title)
                       .fontWeight(.bold)
@@ -206,19 +189,43 @@ struct volunteering: View {
                         self.animals = false
                     }
                 }, label: {
-                    Text("X")
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
+                    HStack {
+                Spacer()
+                        Image("theX")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.leading, 0.0)
+                            .frame(width: 30, height: 30)
+                    }//Hstack
                 })
-                Image("boulderPark")
+                Image("tern")
                      .resizable()
                      .aspectRatio(contentMode: .fit)
                      .cornerRadius(15)
-                Text("Bird Viewing at El Dorado Nature Reserve")
+                Text("Bird Watching at Hayward Regional Shoreline")
                     .font(.title)
                       .fontWeight(.bold)
                       .multilineTextAlignment(.center)
-                Text("Learn about locals birds like pigeons from regional specialists at this beginner-friendly bird watching event.")
+                      .padding(1)
+                VStack(alignment: .leading){
+                    Text("Learn about the birds that frequent the river corridors, woodlands and  wetlands that encircle San Francisco Bay from regional specialists at this beginner-friendly bird watching event. You'll have the chance to see species like Terns, Sanndpipers, and the rare Peregrine Falcon and Great Blue Herons.")
+                        .font(.title3)
+                       // .multilineTextAlignment(.leading)
+                        .padding(1)
+                    
+                    Text("Where: Meet at the the Hayward Shoreline Interpretive Center")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                     //   .multilineTextAlignment(.leading)
+                        .padding(1)
+                    Text("When: Saturday August 12th from 11 am to 2 pm")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                       // .multilineTextAlignment(.leading)
+                    
+                    
+                }
+                .padding(10)
             }//Vstack
             .padding()
            .background(Rectangle()
