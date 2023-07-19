@@ -20,12 +20,18 @@ struct ContentView: View {
            
                 VStack {
 
+                    ZStack {
+                        Image("ncity")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding()
+                        Text ("City Escapes")
+                            .font(.title)
+                            .fontWeight(.black)
+                            .foregroundColor(Color.white)
+                    }
                 
-                
-                    Image("ncity")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding()
+                    
                     Text("Spending time outside is a great way to improve your mental health. Click below to explore some ideas!")
                         .font(.title3)
                         .fontWeight(.bold)
