@@ -70,7 +70,6 @@ struct ContentView: View {
                 
                 
                 
-//thisis another change by daiana
                 
                 
             }//Vstack
@@ -86,4 +85,3 @@ struct ContentView: View {
     }
 }
 
-//THIS IS MADELINE MAKING A COMMENT!!!!!!!
