@@ -42,13 +42,12 @@ struct ContentView: View {
                         Image("nvolunteeringbutton")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)                    }//navlink1
-                    
         
                     NavigationLink(destination: parks()) {
                         Image("nparksbutton")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)                                       }
- 
+ Spacer()
 
                     NavigationLink(destination: beaches()) {
                         Image("nbeachbutton")
